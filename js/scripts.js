@@ -1,3 +1,19 @@
+// Business logic for Tarentinos
+
+
+
+// Business logic for Menu
+
+
+
+// Business logic for Aficionado
+
+
+
+// User interface logic
+
+
+
 // Data structure **PSEUDO**
 
 tarentinos {
