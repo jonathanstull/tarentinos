@@ -31,24 +31,12 @@ Order.prototype.addAficionado = function(aficionado) {
   this.aficionado[aficionado.name] = aficionado;
 };
 
-Order.prototype.addCrust = function(crust) {
-
-};
-
-Order.prototype.addSize = function(size) {
-
-};
-
-Order.prototype.addCheeses = function() {
-
-};
-
-Order.prototype.addToppings = function() {
-
-};
-
-Order.prototype.addSides = function() {
-
+Order.prototype.addPizza = function(size, crust, cheeses, toppings, sides) {
+  this.sizes["size"] = size;
+  this.crusts["crust"] = crust;
+  this.cheeses["cheeses"] = cheeses;
+  this.toppings["toppings"] = toppings;
+  this.sides["sides"] = sides;
 };
 
 // Business logic for Aficionado
