@@ -52,8 +52,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 Describe: tarentinos();
 Test: "It creates a key-value object pair containing an empty menu"
-Code: function tarentinos {menu = {}};
-Expected Output: tarentinos {menu: {}};
+Code: function tarentinos {order = {}};
+Expected Output: tarentinos {order: {}};
 
 ## MIT License
 
