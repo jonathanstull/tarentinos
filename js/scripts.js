@@ -27,6 +27,10 @@ function Order() {
   this.aficionado = {};
 };
 
+Order.prototype.addAficionado = function(aficionado) {
+  this.aficionado[aficionado.name] = aficionado;
+}
+
 // Business logic for Aficionado
 
 function Aficionado(name, street, city, state, zip, phone, email) {
@@ -50,8 +54,8 @@ function Aficionado(name, street, city, state, zip, phone, email) {
 //     // create a key-value object that allows a user to interact with check boxes on a form
 //     crusts {
 //       deepDish: false,
-//       thinCrust: false,
-//       thickCrust: false
+//       pan: false,
+//       traditional: false
 //     }
 //     sizes {
 //       inches8: false,

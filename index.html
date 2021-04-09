@@ -7,7 +7,138 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </head>
-<body>
 
+<header>
+  <!-- Fill and style as time allows -->
+</header>
+
+<body>
+  <div class="container">
+    <h1>Tarentino's</h1>
+    <p>Tarentino's makes the most delicious pizza this side of the Atlantic.</p>
+    <form id="order">
+      <div id="menu">
+        <div id="menu-sizes">
+          <h3>Size</h3>
+          <div class="radio-sizes">
+            <input type="radio" id="inches8" name="sizes" value="inches8">
+              <label for="inches8">8 inches (single)</label>
+          </div>
+          <div class="radio-sizes">
+            <input type="radio" id="inches12" name="sizes" value="inches12">
+              <label for="inches8">12 inches (1-2 people)</label>
+          </div>
+          <div class="radio-sizes">
+            <input type="radio" id="inches16" name="sizes" value="inches16">
+              <label for="inches8">16 inches (2-3 people)</label>
+          </div>
+        </div>
+
+        <div id="menu-crusts">
+          <h3>Style</h3>
+          <div class="radio-crusts">
+            <input type="radio" id="traditional" name="crusts" value="traditional">
+              <label for="traditional">Traditional</label>
+          </div>
+          <div class="radio-crusts">
+            <input type="radio" id="pan" name="crusts" value="pan">
+              <label for="pan">Pan (thin crust)</label>
+          </div>
+          <div class="radio-crusts">
+            <input type="radio" id="deepdish" name="crusts" value="deepdish">
+              <label for="deepdish">Deep dish</label>
+          </div>
+        </div>
+
+        <div id="menu-cheeses">
+          <h3>Formaggi</h3>
+          <div class="checkboxes-cheeses">
+            <input type="checkbox" id="mozzarella" value="mozzarella">
+              <label for="mozzarella">Mozzarella</label>
+              <br>
+            <input type="checkbox" id="feta" value="feta">
+              <label for="feta">Feta</label>
+              <br>
+            <input type="checkbox" id="havarti" value="havarti">
+              <label for="havarti">Havarti</label>
+              <br>
+            <input type="checkbox" id="pecorinoRomano" value="pecorinoRomano">
+              <label for="pecorinoRomano">Pecorino Romano</label>
+          </div>
+        </div>
+
+        <div id="menu-toppings">
+          <h3>Condimenti</h3>
+          <div id="checkboxes-toppings">
+            <input type="checkbox" id="italianSausage" value="italianSausage">
+              <label for="italianSausage">Italian sausage</label>
+              <br>
+            <input type="checkbox" id="chickenSausage" value="chickenSausage">
+              <label for="chickenSausage">Herbed chicken sausage</label>
+              <br>
+            <input type="checkbox" id="canadaBacon" value="canadaBacon">
+              <label for="canadaBacon">Canadian bacon</label>
+            <br>
+            <input type="checkbox" id="pepperoni" value="pepperoni">
+              <label for="pepperoni">Pepperoni</label>
+              <br>
+            <input type="checkbox" id="mushrooms" value="mushrooms">
+              <label for="mushrooms">Shiitake mushrooms</label>
+              <br>
+            <input type="checkbox" id="lilmamas" value="lilmamas">
+              <label for="lilmamas">Lil Mama's peppers</label>
+              <br>
+            <input type="checkbox" id="pineapple" value="pineapple">
+              <label for="pineapple">Pineapple</label>
+          </div>
+        </div>
+
+        <div id="menu-sides">
+          <h3>Sides</h3>
+          <div class="checkboxes-cheeses">
+            <input type="checkbox" id="chili-flake" value="chili-flake">
+              <label for="chili-flake">Chili flakes (2oz.)</label>
+              <br>
+            <input type="checkbox" id="ranch" value="ranch">
+              <label for="ranch">Ranch (2oz.)</label>
+              <br>
+            <input type="checkbox" id="marinara" value="marinara">
+              <label for="marinara">Marinara (2oz.)</label>
+              <br>
+            <input type="checkbox" id="garlic-butter" value="garlic-butter">
+              <label for="garlic-butter">Garlic butter (2oz.)</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="aficionado">
+        <h3>Contact information</h3>
+        <div class="aficionado-group">
+          <label for="name">Your name:</label>
+          <input id="name" type="text" placeholder="Enter your full name"><br>
+          <label for="address">Your address:</label>
+          <input id="address" type="text" placeholder="Street address"><br>
+          <input id="city" type="text" placeholder="City">
+          <input id="state" type="text" placeholder="State">
+          <input id="zip" type="text" placeholder="Zip code">
+        </div>
+        <div class="aficionado-group">
+          <label for="phone">Phone number:</label>
+          <input id="phone" type="tel" placeholder="Phone number">
+        </div>
+        <div class="aficionado-group">
+          <label for="email">Your email address:</label>
+          <input id="email" type="email" placeholder="Email">
+        </div>
+      </div>
+      <div id="order-btn">
+        <button type="submit" id="submit-order" value="submit-order">Place your order</button>
+      </div>
+    </form>
+  </div>
 </body>
+
+<footer>
+  <!-- Fill and style as time allows -->
+</footer>
 </html>
