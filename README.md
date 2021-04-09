@@ -76,9 +76,14 @@ Describe: Tarentinos.prototype.assignOrderId();
   Expected Output: this.currentOrderId
 
 Describe: Order.prototype.addAficionado();
-  1. Test: "It adds an aficiionado to Order objects"
+  1. Test: "It adds an aficionado to Order objects"
   Code: Order.prototype.addAficionado = function(aficionado) {this.aficionado[aficionado.name] = aficionado;}
   Expected Output: tarentinos {orders: 1 {orderId: 1, crusts: {}, sizes: {}, cheeses: {}, toppings: {}, sides: {}, aficionado{name, street, city, state, zip, phone, email}}}
+
+Describe: Order.prototype.add[...]()
+  1. Test: "It adds a size to the sizes key-value object in the Order object"
+  Code: Order.prototype.addSize = function(size) {this.sizes[size.diameter] = size;}
+  Expected Output: order {orderId: 1, sizes: {size}, crusts: {}, cheeses: {}, toppings: {}, sides: {}, aficionado{name, street, city, state, zip, phone, email}}}
 
 ## MIT License
 

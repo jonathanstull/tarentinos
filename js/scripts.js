@@ -29,7 +29,27 @@ function Order() {
 
 Order.prototype.addAficionado = function(aficionado) {
   this.aficionado[aficionado.name] = aficionado;
-}
+};
+
+Order.prototype.addCrust = function(crust) {
+
+};
+
+Order.prototype.addSize = function(size) {
+
+};
+
+Order.prototype.addCheeses = function() {
+
+};
+
+Order.prototype.addToppings = function() {
+
+};
+
+Order.prototype.addSides = function() {
+
+};
 
 // Business logic for Aficionado
 
