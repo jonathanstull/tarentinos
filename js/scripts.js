@@ -1,5 +1,7 @@
 // Business logic for Tarentinos
 
+let tarentinos = new Tarentinos();
+
 function Tarentinos() {
   this.orders = {};
   this.currentOrderId = 0;
@@ -41,9 +43,9 @@ Order.prototype.addPizza = function(size, crust, cheeses, toppings, sides) {
 
 // Business logic for Aficionado
 
-function Aficionado(name, street, city, state, zip, phone, email) {
+function Aficionado(name, address, city, state, zip, phone, email) {
   this.name = name;
-  this.street = street;
+  this.address = address;
   this.city = city;
   this.state = state;
   this.zip = zip;
@@ -51,9 +53,46 @@ function Aficionado(name, street, city, state, zip, phone, email) {
   this.email = email;
 };
 
+// Business logic for order listeners
+
+function addOrderListeners() {
+
+};
+
 // User interface logic
 
+$(document).ready(function() {
+  $("form#order-form").submit(function(event) {
+    event.preventDefault();
+      // need to call contact listeners function
 
+    const size = $("input:radio[name=sizes]").val();
+    const crust = $("input:radio[name=crusts]").val();
+
+    const name = $("form#name").val();
+    const address = $("form#address").val();
+    const city = $("form#city").val();
+    const state = $("form#state").val();
+    const zip = $("form#zip").val();
+    const phone = $("form#phone").val();
+    const email = $("form#email").val();
+    let newAficionado = new Aficionado(name, address, city, state, zip, phone, email);
+    console.log(newAficionado);
+  });
+});
+
+// function addCheeses() {
+//   if ($("#mozzarella").is(":checked") === true) {
+//     cheeses["mozzarella"] = true;
+//   } else if ($("#feta").is(":checked") === true) {
+//     let cheeses["feta"] = true;
+//   } else if ($("#havarti").is(":checked") === true) {
+//     cheeses["havarti"] = true;
+//   } else if ($("#pecorinoRomano").is(":checked") === true) {
+//     cheeses["havarti"] = true;
+//   }
+//   return cheeses;
+// };
 
 // js architecture **PSEUDO**
 
