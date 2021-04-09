@@ -62,8 +62,8 @@ Describe: Order();
 
 Describe: Aficionado();
   1. Test: "It creates an aficionado object with customer information and a key-value object for order"
-  Code: function Aficionado(name, street, city, state, zip) {}
-  Expected Output: Aficionado {name: name, street: street, city: city, state: state, zip: zip, aficionadoOrder: {}}
+  Code: function Aficionado(name, street, city, state, zip, phone, email) {}
+  Expected Output: Aficionado {name: name, street: street, city: city, state: state, zip: zip, phone: phone, email: email, aficionadoOrder: {}}
 
 ## MIT License
 

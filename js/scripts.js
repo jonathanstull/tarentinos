@@ -7,16 +7,25 @@ function Tarentinos() {
 // Business logic for Order
 
 function Order() {
-  this.crusts = {},
-  this.sizes = {},
-  this.cheeses = {},
-  this.toppings = {},
-  this.sides = {}
+  this.crusts = {};
+  this.sizes = {};
+  this.cheeses = {};
+  this.toppings = {};
+  this.sides = {};
 };
 
 // Business logic for Aficionado
 
-
+function Aficionado(name, street, city, state, zip, phone, email) {
+  this.name = name;
+  this.street = street;
+  this.city = city;
+  this.state = state;
+  this.zip = zip;
+  this.phone = phone;
+  this.email = email;
+  this.aficionadoOrder = {};
+};
 
 // User interface logic
 
@@ -68,7 +77,7 @@ function Order() {
 //     this.city = city,
 //     this.state = state,
 //     this.zip = zip,
-//     this.phoneNumber = phoneNumber,
+//     this.phone = phone,
 //     this.email = email
 //     this.aficionadoOrder = {
 //       crusts {
