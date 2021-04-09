@@ -46,14 +46,14 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * Each pizza should have options for different toppings and/or crust styles, cheese, sides
 * Logic should include a pizza object constructor with properties for toppings and size
 * Logic should also include a method that calculates the cost of the pizza and shows the cost to the customer
-* Time permitting, Tarantino should make an appearance during the ordering process to charm the user, as chefs must do and dread doing
+* Time permitting, Tarentino should make an appearance during the ordering process to charm the user, as chefs must do and dread doing
 
 ## Tests
 
 Describe: Tarentinos();
   1. Test: "It creates an object with a key-value object pair containing an empty order"
-  Code: function Tarentinos {this.order = {}};
-  Expected Output: Tarentinos {order: {}};
+  Code: function Tarentinos {this.orders = {}};
+  Expected Output: Tarentinos {orders: {}};
 
 Describe: Order();
   1. Test: "It creates an order object with key-value objects for menu category options"
@@ -64,6 +64,16 @@ Describe: Aficionado();
   1. Test: "It creates an aficionado object with customer information and a key-value object for order"
   Code: function Aficionado(name, street, city, state, zip, phone, email) {}
   Expected Output: Aficionado {name: name, street: street, city: city, state: state, zip: zip, phone: phone, email: email, aficionadoOrder: {}}
+
+Describe: Tarentinos.prototype.addOrder();
+  1. Test: "It adds an order to the empty key-value object in Tarentinos"
+  Code: Tarentinos.prototype.addOrder = function(order) {this.orders[order.id] = order};
+  Expected Output: Tarentinos {orders: order{}}
+
+Describe: Tarentinos.prototype.assignOrderId();
+  1. Test: "It adds an order ID to Order objects"
+  Code: Tarentinos.prototype.assignOrderId = function() {this.currentOrderId += 1; return this.currentOrderId;}
+  Expected Output: this.currentOrderId
 
 ## MIT License
 

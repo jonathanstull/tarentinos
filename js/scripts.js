@@ -1,17 +1,23 @@
 // Business logic for Tarentinos
 
 function Tarentinos() {
-  this.order = {};
+  this.orders = {};
 }
+
+Tarentinos.prototype.addOrder = function(order) {
+  this.orders[order.orderId] = order;
+};
 
 // Business logic for Order
 
 function Order() {
+  this.orderId = 1;
   this.crusts = {};
   this.sizes = {};
   this.cheeses = {};
   this.toppings = {};
   this.sides = {};
+  this.aficionado = {};
 };
 
 // Business logic for Aficionado
@@ -24,7 +30,6 @@ function Aficionado(name, street, city, state, zip, phone, email) {
   this.zip = zip;
   this.phone = phone;
   this.email = email;
-  this.aficionadoOrder = {};
 };
 
 // User interface logic
