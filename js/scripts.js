@@ -8,6 +8,11 @@ tarentinos {
       thinCrust: false,
       thickCrust: false
     }
+    sizes {
+      inches8: false,
+      inches12: false,
+      inches16: false
+    }
     cheeses {
       mozzarella: false,
       feta: false,
@@ -52,6 +57,11 @@ tarentinos {
         feta: false,
         havarti: false,
         pecorinoRomano: false
+      }
+      sizes {
+        inches8: false,
+        inches12: false,
+        inches16: false
       }
       toppings {
         italianSausage: false,

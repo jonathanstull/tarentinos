@@ -40,9 +40,17 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * _you used in your project_
 * _here_
 
-## Open Source statement
+## Specs
 
+* The website should allow users to place an order for a pizza of their choosing
+* Each pizza should have options for different toppings and/or crust styles, cheese, sides
+* Logic should include a pizza object constructor with properties for toppings and size
+* Logic should also include a method that calculates the cost of the pizza and shows the cost to the customer
+* Time permitting, Tarantino should make an appearance during the ordering process to charm the user, as chefs must do and dread doing
 
+## Tests
+
+Describe:
 
 ## MIT License
 
