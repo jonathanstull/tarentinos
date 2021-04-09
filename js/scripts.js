@@ -2,10 +2,17 @@
 
 function Tarentinos() {
   this.orders = {};
+  this.currentOrderId = 0;
 }
 
 Tarentinos.prototype.addOrder = function(order) {
+  order.orderId = this.assignOrderId();
   this.orders[order.orderId] = order;
+};
+
+Tarentinos.prototype.assignOrderId = function() {
+  this.currentOrderId += 1;
+  return this.currentOrderId;
 };
 
 // Business logic for Order
