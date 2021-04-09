@@ -75,6 +75,11 @@ Describe: Tarentinos.prototype.assignOrderId();
   Code: Tarentinos.prototype.assignOrderId = function() {this.currentOrderId += 1; return this.currentOrderId;}
   Expected Output: this.currentOrderId
 
+Describe: Order.prototype.addAficionado();
+  1. Test: "It adds an aficiionado to Order objects"
+  Code: Order.prototype.addAficionado = function(aficionado) {this.aficionado[aficionado.name] = aficionado;}
+  Expected Output: tarentinos {orders: 1 {orderId: 1, crusts: {}, sizes: {}, cheeses: {}, toppings: {}, sides: {}, aficionado{aficionadoId, name, street, city, state, zip, phone, email}}}
+
 ## MIT License
 
 Copyright (c) 2021 Jonathan Stull
