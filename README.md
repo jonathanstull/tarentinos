@@ -50,10 +50,20 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Tests
 
-Describe: tarentinos();
-Test: "It creates a key-value object pair containing an empty menu"
-Code: function tarentinos {order = {}};
-Expected Output: tarentinos {order: {}};
+Describe: Tarentinos();
+  1. Test: "It creates an object with a key-value object pair containing an empty order"
+  Code: function Tarentinos {this.order = {}};
+  Expected Output: Tarentinos {order: {}};
+
+Describe: Order();
+  1. Test: "It creates an order object with key-value objects for menu category options"
+  Code: function Order {this.crusts = {}, this.sizes = {}, this.cheeses = {}, this.toppings = {}, this.sides = {}};
+  Expected Output: Order {crusts: {}, sizes: {}, cheeses: {}, toppings: {}, sides: {}}
+
+Describe: Aficionado();
+  1. Test: "It creates an aficionado object with customer information and a key-value object for order"
+  Code: function Aficionado(name, street, city, state, zip) {}
+  Expected Output: Aficionado {name: name, street: street, city: city, state: state, zip: zip, aficionadoOrder: {}}
 
 ## MIT License
 

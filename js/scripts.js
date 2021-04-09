@@ -4,9 +4,15 @@ function Tarentinos() {
   this.order = {};
 }
 
-// Business logic for Menu
+// Business logic for Order
 
-
+function Order() {
+  this.crusts = {},
+  this.sizes = {},
+  this.cheeses = {},
+  this.toppings = {},
+  this.sides = {}
+};
 
 // Business logic for Aficionado
 
