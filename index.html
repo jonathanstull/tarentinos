@@ -55,16 +55,16 @@
           <h3>Formaggi</h3>
           <p>Add as many cheeses as you would like for $1 each.</p>
           <div class="checkboxes-cheeses">
-            <input type="checkbox" id="mozzarella" value="mozzarella">
+            <input type="checkbox" name="cheeses" id="mozzarella" value="mozzarella">
               <label for="mozzarella">Mozzarella</label>
               <br>
-            <input type="checkbox" id="feta" value="feta">
+            <input type="checkbox" name="cheeses" id="feta" value="feta">
               <label for="feta">Feta</label>
               <br>
-            <input type="checkbox" id="havarti" value="havarti">
+            <input type="checkbox" name="cheeses" id="havarti" value="havarti">
               <label for="havarti">Havarti</label>
               <br>
-            <input type="checkbox" id="pecorinoRomano" value="pecorinoRomano">
+            <input type="checkbox" name="cheeses" id="pecorinoRomano" value="pecorinoRomano">
               <label for="pecorinoRomano">Pecorino Romano</label>
           </div>
         </div>
@@ -139,6 +139,10 @@
         <button type="submit" id="submit-order" value="submit-order">Place your order</button>
       </div>
     </form>
+
+    <div id="order-summary">
+      <h2>Total cost: <span id="total-cost"></span></h2>
+    </div>
   </div>
 </body>
 
@@ -146,3 +150,30 @@
   <!-- Fill and style as time allows -->
 </footer>
 </html>
+
+<!-- Refactored form as a collection of unordered lists
+<h2>Size</h2>
+    <ul>
+
+    </ul>
+
+    <h2>Style</h2>
+    <ul>
+
+    </ul>
+
+    <h2>Formaggi</h2>
+    <ul>
+
+    </ul>
+
+    <h2>Condimenti</h2>
+    <ul>
+
+    </ul>
+    
+    <h2>Sides</h2>
+    <ul>
+
+    </ul>
+   -->

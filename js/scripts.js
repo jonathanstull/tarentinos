@@ -56,28 +56,34 @@ function Aficionado(name, address, city, state, zip, phone, email) {
 // Business logic for order listeners
 
 function addOrderListeners() {
+  let checkboxes = $("input[name:cheeses]");
+  checkboxes.change(function() {
 
-};
+});
 
 // User interface logic
 
 $(document).ready(function() {
-  $("form#order-form").submit(function(event) {
+  $("#order-form").submit(function(event) {
     event.preventDefault();
-      // need to call contact listeners function
+    // addOrderListeners();
+    // console.log(cheeses);
 
     const size = $("input:radio[name=sizes]").val();
+    console.log(size);
     const crust = $("input:radio[name=crusts]").val();
+    console.log(crust);
 
-    const name = $("form#name").val();
-    const address = $("form#address").val();
-    const city = $("form#city").val();
-    const state = $("form#state").val();
-    const zip = $("form#zip").val();
-    const phone = $("form#phone").val();
-    const email = $("form#email").val();
+    const name = $("#name").val();
+    const address = $("#address").val();
+    const city = $("#city").val();
+    const state = $("#state").val();
+    const zip = $("#zip").val();
+    const phone = $("#phone").val();
+    const email = $("#email").val();
     let newAficionado = new Aficionado(name, address, city, state, zip, phone, email);
     console.log(newAficionado);
+    
   });
 });
 
