@@ -1,8 +1,10 @@
 // Business logic for Tarentinos
 
-let tarentinos = new Tarentinos();
+let tarentinos = new Pizza();
 
-
+function Pizza() {
+  
+}
 
 // function Tarentinos() {
 //   this.orders = {};
@@ -65,21 +67,21 @@ let tarentinos = new Tarentinos();
 
 // Business logic for Cheeses
 
-function getCheeses() {
-  let cheeses = {};
-  $("input[name:cheeses]").forEach(function() {
-    if ($("#mozzarella").val() !== undefined) {
-      cheeses["mozzarella"] = true;
-    } else if ($("#feta").val() !== undefined) {
-      cheeses["feta"] = true;
-    } else if ($("#havarti").val() !== undefined) {
-      cheeses["havarti"] = true;
-    } else if ($("#pecorinoRomano").val() !== undefined) {
-      cheeses["pecorinoRomano"] = true;
-    };
-  });
-  return cheeses
-};
+// function getCheeses() {
+//   let cheeses = {};
+//   $("input[name:cheeses]").forEach(function() {
+//     if ($("#mozzarella").val() !== undefined) {
+//       cheeses["mozzarella"] = true;
+//     } else if ($("#feta").val() !== undefined) {
+//       cheeses["feta"] = true;
+//     } else if ($("#havarti").val() !== undefined) {
+//       cheeses["havarti"] = true;
+//     } else if ($("#pecorinoRomano").val() !== undefined) {
+//       cheeses["pecorinoRomano"] = true;
+//     };
+//   });
+//   return cheeses
+// };
 
 // User interface logic
 

@@ -14,6 +14,109 @@
 
 <body>
   <div class="container">
+    <h1>Tarantino's Pizza Pie</h1>
+    <p>The most delicious pizza this side of the Atlantic.</p>
+    <form id="order-form">
+      <div id="menu-dropdowns">
+        <!-- Size -->
+        <label for="size">Size:</label>
+        <select name="size" id="size" required>
+          <option value="12-inch">12 inches (1 person)</option>
+          <option value="18-inch">18 inches (2-3 people)</option>
+          <option value="24-inch">24 inches (3-4 people)</option>
+        </select>
+        <br>
+
+        <!-- Crust -->
+        <label for="crust">Crust:</label>
+        <select name="crust" id="crust" required>
+          <option value="pan">Pan pizza</option>
+          <option value="traditional">Traditional</option>
+          <option value="deep-dish">Deep dish</option>
+        </select>
+        <br>
+
+        <!-- Cheese -->
+        <label for="cheese">Cheese:</label>
+        <select name="cheese" id="cheese" required>
+          <option value="mozzarella">Mozzarella</option>
+          <option value="romano">Romano</option>
+          <option value="parmesan">Parmesan</option>
+        </select>
+        <br>
+
+        <!-- Sauce -->
+        <label for="sauce">Sauce:</label>
+        <select name="sauce" id="sauce" required>
+          <option value="marinara">Marinara</option>
+          <option value="pesto">Pesto</option>
+          <option value="garlic-cream">Garlic cream</option>
+        </select>
+        <br>
+
+        <!-- Meat -->
+        <label for="meat">Meat:</label>
+        <select name="meat" id="meat">
+          <option value="none">None</option>
+          <option value="ital-sausage">Italian sausage</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="bacon">Bacon</option>
+          <option value="soppressata">Soppressata</option>
+        </select>
+        <br>
+
+        <!-- Mushrooms -->
+        <label for="mushrooms">Mushrooms:</label>
+        <select name="mushrooms" id="mushrooms">
+          <option value="none">None</option>
+          <option value="some">Some</option>
+          <option value="extra">Extra!</option>
+        </select>
+        <br>
+
+        <!-- Artichoke -->
+        <label for="artichoke">Artichoke:</label>
+        <select name="artichoke" id="artichoke">
+          <option value="none">None</option>
+          <option value="some">Some</option>
+          <option value="extra">Extra!</option>
+        </select>
+        <br>
+
+        <!-- Anchovy -->
+        <label for="anchovy">Anchovy:</label>
+        <select name="anchovy" id="anchovy">
+          <option value="none">None</option>
+          <option value="some">Some</option>
+          <option value="extra">Extra!</option>
+        </select>
+        <br>
+
+        <!-- Sun-dried tomatos -->
+        <label for="sundried-tomato">Sun-dried Tomato:</label>
+        <select name="sundried-tomato" id="sundried-tomato">
+          <option value="none">None</option>
+          <option value="some">Some</option>
+          <option value="extra">Extra!</option>
+        </select>
+        <br>
+      </div>
+      <button type="submit" id="btn-submit">Submit</button>
+    </form>
+    <br>
+    <div id="order-summary">
+      <h2>Total cost: <span id="total-cost"></span></h2>
+    </div>
+  </div>
+</div>
+</body>
+
+<footer>
+    <!-- Fill and style as time allows -->
+</footer>
+</html>
+
+  <!-- <div class="container">
     <h1>Tarentino's</h1>
     <p>Tarentino's makes the most delicious pizza this side of the Atlantic.</p>
     <form id="order-form">
@@ -138,18 +241,7 @@
       <div id="order-btn">
         <button type="submit" id="submit-order" value="submit-order">Place your order</button>
       </div>
-    </form>
-
-    <div id="order-summary">
-      <h2>Total cost: <span id="total-cost"></span></h2>
-    </div>
-  </div>
-</body>
-
-<footer>
-  <!-- Fill and style as time allows -->
-</footer>
-</html>
+    </form> -->
 
 <!-- Refactored form as a collection of unordered lists
 <h2>Size</h2>
