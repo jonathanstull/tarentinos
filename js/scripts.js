@@ -1,10 +1,17 @@
-// Business logic for Tarentinos
+// Business logic for Pizza
+
+export default class Pizza {
+
+  constructor(size, crust, cheese, sauce, meat, mushrooms, artichoke, anchovy, tomato) {
+    
+  }
+
+}
+
+// User interface logic
 
 let tarentinos = new Pizza();
 
-function Pizza() {
-  
-}
 
 // function Tarentinos() {
 //   this.orders = {};
@@ -83,33 +90,33 @@ function Pizza() {
 //   return cheeses
 // };
 
-// User interface logic
+// // User interface logic
 
-$(document).ready(function() {
-  $("#order-form").submit(function(event) {
-    console.log(event)
-      event.preventDefault();
-    // debugger
-    // addOrderListeners();
-    // console.log(cheeses);
+// $(document).ready(function() {
+//   $("#order-form").submit(function(event) {
+//     console.log(event)
+//       event.preventDefault();
+//     // debugger
+//     // addOrderListeners();
+//     // console.log(cheeses);
 
-    // const size = $("input:radio[name=sizes]").val();
-    // console.log(size);
-    // const crust = $("input:radio[name=crusts]").val();
-    // console.log(crust);
-    // let cheeses = {};
-    // getCheeses();
-    // console.log(cheeses);
+//     // const size = $("input:radio[name=sizes]").val();
+//     // console.log(size);
+//     // const crust = $("input:radio[name=crusts]").val();
+//     // console.log(crust);
+//     // let cheeses = {};
+//     // getCheeses();
+//     // console.log(cheeses);
   
-    const name = $("#name").val();
-    console.log(name);
-    const address = $("#address").val();
-    const city = $("#city").val();
-    const state = $("#state").val();
-    const zip = $("#zip").val();
-    const phone = $("#phone").val();
-    const email = $("#email").val();
-    let newAficionado = new Aficionado(name, address, city, state, zip, phone, email);
-    console.log(newAficionado);
-  });
-});
+//     const name = $("#name").val();
+//     console.log(name);
+//     const address = $("#address").val();
+//     const city = $("#city").val();
+//     const state = $("#state").val();
+//     const zip = $("#zip").val();
+//     const phone = $("#phone").val();
+//     const email = $("#email").val();
+//     let newAficionado = new Aficionado(name, address, city, state, zip, phone, email);
+//     console.log(newAficionado);
+//   });
+// });

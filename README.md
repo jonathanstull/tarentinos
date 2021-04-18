@@ -90,6 +90,13 @@ Describe: addOrderListeners();
   Code: function addOrderListeners() {}
   Expected Output:
 
+## Refactor tests
+
+Describe: Pizza();
+  1. Test: "It creates a new pizza object with values for size, crust, cheese, sauce, meat, mushrooms, artichoke, anchovy, and tomato";
+  Code: Pizza(size, crust, cheese, sauce, meat, mushrooms, artichoke, anchovy, tomato);
+  Expected Output: Pizza: {size, crust, cheese, sauce, meat, mushrooms, artichoke, anchovy, tomato};
+
 
 ## MIT License
 
