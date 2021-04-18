@@ -3,34 +3,53 @@
 class Pizza {
 
   constructor(sizeCost, crustCost, cheeseCost, sauceCost, meatCost, mushroomsCost, artichokeCost, anchovyCost, tomatoCost) {
-    this.size = sizeCost;
-    this.crust = crustCost;
-    this.cheese = cheeseCost;
-    this.sauce = sauceCost;
-    this.meat = meatCost;
-    this.mushrooms = mushroomsCost;
-    this.artichoke = artichokeCost;
-    this.anchovy = anchovyCost;
-    this.tomato = tomatoCost;
-    this.itemCosts;
-    this.totalCost;
+    this.size = parseInt(sizeCost);
+    this.crust = parseInt(crustCost);
+    this.cheese = parseInt(cheeseCost);
+    this.sauce = parseInt(sauceCost);
+    this.meat = parseInt(meatCost);
+    this.mushrooms = parseInt(mushroomsCost);
+    this.artichoke = parseInt(artichokeCost);
+    this.anchovy = parseInt(anchovyCost);
+    this.tomato = parseInt(tomatoCost);
   }
 
   addItemCost() {
-    let itemCosts = Object.values(this);
-    return this.itemCosts = itemCosts;
+    return Object.values(this);
   }
 
-  sumTotalCost() {
-    let itemCostsArray = this.itemCosts;
+  sumTotalCost(itemCostsArray) {
     let totalCost = 0;
     itemCostsArray.forEach((itemCost) => {
       totalCost += itemCost;
     });
-    return this.totalCost = totalCost;
+    return totalCost;
   }
 }
 
 // User interface logic
 
-let tarentinos = new Pizza();
+$(document).ready(() => {
+  $("#order-form").submit((event) => {
+    event.preventDefault();
+
+    let cost = 0;
+
+    const sizeCost = $("#size").val();
+    const crustCost = $("#crust").val();
+    const cheeseCost = $("#cheese").val();
+    const sauceCost = $("#sauce").val();
+    const meatCost = $("#meat").val();
+    const mushroomsCost = $("#mushrooms").val();
+    const artichokeCost = $("#artichoke").val();
+    const anchovyCost = $("#anchovy").val();
+    const tomatoCost = $("#sundried-tomato").val();
+
+    let pizza = new Pizza(sizeCost, crustCost, cheeseCost, sauceCost, meatCost, mushroomsCost, artichokeCost, anchovyCost, tomatoCost);
+
+    let itemCostsArray = pizza.addItemCost();
+    cost = pizza.sumTotalCost(itemCostsArray).toFixed(2);
+
+    $("#order-summary").html(`<h2>Total cost: $${cost}</h2>`).show();
+  });
+});
