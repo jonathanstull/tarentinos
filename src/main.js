@@ -14,6 +14,11 @@ class Pizza {
     this.tomato = tomatoCost;
   }
 
+  addCost() {
+    let itemCosts = [];
+    itemCosts.push(Object.values(this));
+    return itemCosts;
+  }
 }
 
 // User interface logic
