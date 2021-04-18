@@ -97,6 +97,10 @@ Describe: Pizza();
   Code: Pizza(size, crust, cheese, sauce, meat, mushrooms, artichoke, anchovy, tomato);
   Expected Output: Pizza: {size, crust, cheese, sauce, meat, mushrooms, artichoke, anchovy, tomato};
 
+  2. Test: "It passes the item cost from the object to an item cost array";
+  Code: Pizza.prototype.addCosts();
+  Expected Output: itemCosts [sizeCost, crustCost, cheeseCost, meatCost, mushroomsCost, artichokeCost, anchovyCost, tomatoCost];
+
 
 ## MIT License
 
