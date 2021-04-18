@@ -14,10 +14,14 @@ class Pizza {
     this.tomato = tomatoCost;
   }
 
-  addCost() {
+  addItemCost() {
     let itemCosts = [];
     itemCosts.push(Object.values(this));
     return itemCosts;
+  }
+
+  sumTotalCost() {
+
   }
 }
 
