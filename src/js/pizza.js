@@ -1,16 +1,8 @@
-// Business logic for Pizza
 
-export default class Pizza {
-
-  constructor(size, crust, cheese, sauce, meat, mushrooms, artichoke, anchovy, tomato) {
-    
-  }
-
-}
 
 // User interface logic
 
-let tarentinos = new Pizza();
+
 
 
 // function Tarentinos() {
